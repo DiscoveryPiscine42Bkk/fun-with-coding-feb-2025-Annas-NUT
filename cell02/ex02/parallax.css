@@ -1,0 +1,50 @@
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* The parallax effect */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#section1 {
+    background-image: url('your-first-image.jpg'); /* Replace with the URL of your first image */
+}
+
+#section2 {
+    background-image: url('your-second-image.jpg'); /* Replace with the URL of your second image */
+}
+
+/* Centering content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Black block section */
+.black-block {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-block .content h1 {
+    font-size: 2rem;
+}
