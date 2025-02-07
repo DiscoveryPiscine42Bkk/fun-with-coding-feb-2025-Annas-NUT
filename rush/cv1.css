@@ -1,0 +1,234 @@
+/* Base Styles (for larger screens) */
+body {
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #151942;
+    padding: auto;
+}
+.navbar-logo {
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+}
+.navbar-nav .nav-link:hover {
+    background-color: #4a4e69;
+    border-radius: 10px;
+}
+
+.section-contact{
+    padding: 60px 20px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+/* Page Sections */
+.section {
+    padding: 60px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+#personal {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+p {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+span {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+#personal img {
+    max-width: 100%;
+    height: auto;
+    border-width: 5px;
+    border-style: solid; 
+    border-color: #151942;
+    flex-shrink: 0;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+#personal ul {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    max-width: 300px;
+    overflow: hidden;
+}
+#personal ul h2 {
+    margin-bottom: 10px;
+}
+#personal span {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+/* Experience Section */
+#experience {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+#experience ul {
+    padding: 0;
+}
+#experience ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#skill {
+    color: white;
+}
+
+
+/* Contact Section */
+#contact {
+    background-color: black;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+#contact ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+/* Buttons */
+.btn-primary {
+    background-color: #2b2d42;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #4a4e69;
+}
+
+/* Back to Home Button */
+.btn-home {
+    background-color: #151942;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.btn-home:hover {
+    background-color: #4a4e69;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 1100px) {
+    /* Navbar */
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    /* Section Layouts */
+    .section {
+        margin-top: 50px;
+        padding: 40px 10px;
+        height: auto;
+    }
+    /* Personal Section */
+    #personal {
+        padding: 20px 10px;
+    }
+    #personal img {
+        width: 100%;
+        height: auto;
+    }
+    .flex-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    #personal ul {
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+    /* Experience Section */
+    #experience h3 {
+        text-align: center;
+    }
+    /* Skills Section */
+    #skill h3 {
+        font-size: 1.8rem;
+    }
+    #skill ul {
+        font-size: 1.1rem;
+    }
+    /* Contact Section */
+    #contact ul li {
+        font-size: 1.1rem;
+    }
+    /* Button */
+    .btn-home {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar Links */
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    /* Personal Info Text */
+    p {
+        font-size: 1.6rem;
+    }
+    span {
+        font-size: 1rem;
+    }
+    #personal img {
+        max-width: 90%;
+        height: auto;
+    }
+    /* Adjusting Skills */
+    #skill ul {
+        font-size: 1rem;
+    }
+
+    /* Contact Section */
+    #contact ul li {
+        font-size: 1rem;
+    }
+
+    .btn-home {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
