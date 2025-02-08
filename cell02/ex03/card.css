@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Helvetica", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2d3e50; /* Darker background for contrast */
+  }
+  
+  .profile-card {
+    background-color: #ffffff;
+    width: 320px;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .profile-card h2 {
+    font-weight: 600;
+    font-size: 2.2em;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .profile-pic {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #eee; /* Adding border around image */
+  }
+  
+  .profile-card h3 {
+    font-size: 1.7em;
+    margin: 5px;
+    color: #555;
+  }
+  
+  .profile-card p {
+    margin: 10px 0;
+    color: #777;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 30px;
+  }
+  
+  .social-icons img {
+    width: 45px;
+    transition: transform 0.2s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2); /* Hover effect on icons */
+  }
+  
+  button {
+    background-color: #1d1d1d;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e74c3c; /* Red color on hover */
+  }
+  
